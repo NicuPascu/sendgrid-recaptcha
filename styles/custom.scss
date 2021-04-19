@@ -1,0 +1,37 @@
+.font-size-large {
+    font-size: 1.3rem
+}
+
+.line-height-medium {
+    line-height: 1.2;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.table {
+    &.table-layout-fixed {
+        table-layout: fixed;
+    }
+
+    thead th {
+        vertical-align: top;
+    }
+}
+
+.container:not(.hero){
+    h2,
+    h3,
+    h4 {
+        color: #0B456D;
+    }
+}
+
+.boldest {
+    font-weight: 700;
+}
+
+.btn-contact {
+    background-color: #F1C851;
+}
