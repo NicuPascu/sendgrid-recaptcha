@@ -77,8 +77,8 @@ export default class Index extends React.Component {
         return (
             <>
                 <Head>
-                    <title>Raise Your Standards</title>
-                    <meta name="og:title" property="og:title" content={`Raise Your Standards`}></meta>
+                    <title>Sendgrid Recaptcha example</title>
+                    <meta name="og:title" property="og:title" content={`Sendgrid Recaptcha example`}></meta>
                     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 </Head>
                 <div id="top-container" className="pt-3">
@@ -96,15 +96,15 @@ export default class Index extends React.Component {
                                         <h3>Send us a message</h3>
                                         <form className="rounded border bg-light p-3 mt-3" onSubmit={this.sendContactForm}>
                                             <div className="form-group">
-                                                <input type="text" name="name" required className="form-control" id="contactNameInput" placeholder="Numele tău" />
+                                                <input type="text" name="name" required className="form-control" id="contactNameInput" placeholder="Name" />
                                             </div>
 
                                             <div className="form-group">
-                                                <input type="email" name="email" required className="form-control" id="contactEmailInput" placeholder="Adresa de email" />
+                                                <input type="email" name="email" required className="form-control" id="contactEmailInput" placeholder="email" />
                                             </div>
 
                                             <div className="form-group">
-                                                <label htmlFor="contactMsgTextArea">Mesaj</label>
+                                                <label htmlFor="contactMsgTextArea">Message</label>
                                                 <textarea name="msg" required className="form-control" id="contactMsgTextArea" rows="4"></textarea>
                                             </div>
 
@@ -114,7 +114,7 @@ export default class Index extends React.Component {
                                             />
 
                                             { !submittingForm ?
-                                                <button disabled={!this.state.captchaValid && true} type="submit" className={`btn btn-${this.state.captchaValid ? 'primary' : 'secondary'} mt-3`}>Trimite</button>
+                                                <button disabled={!this.state.captchaValid && true} type="submit" className={`btn btn-${this.state.captchaValid ? 'primary' : 'secondary'} mt-3`}>Send</button>
                                             :
                                                 <div className="mt-3">
                                                     <Spinner width="38" />

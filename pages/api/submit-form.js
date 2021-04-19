@@ -7,7 +7,7 @@ async function sendMail(recipientAddress, name, email, msg) {
 
     const mail = {
         to: recipientAddress,
-        from: 'no-reply@yourDomainHere',
+        from: 'no-reply@yourDomainHere.com',
         subject: 'New form',
         text: `Name: ${name}\nemail: ${email}\nMessage:\n${msg}`,
         html: `
